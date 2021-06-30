@@ -6,6 +6,7 @@ const colors = [
   '#009688',
   '#795548',
 ];
+console.log(colors);
 
 //CСЫЛКИ
 const refs = {
@@ -18,6 +19,9 @@ const refs = {
 const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
+const minColor = 0;
+const maxColor = colors.length;
+
 const CHENGE_INTERVAL = 1000;
 let intervalId = [];
 
@@ -33,11 +37,13 @@ function startСhangeСolor() {
    buttonNotActiveStart();
 
    let interlId = setInterval(() => {
-      const randomColor = Math.floor(Math.random() * colors.length);
+      // const randomColorOld = Math.floor(Math.random() * colors.length);
+      const randomColor = randomIntegerFromInterval(minColor, maxColor)
       refs.bodyColor.style.background = colors[randomColor];
+      console.log(refs.bodyColor.style.background);
    }, CHENGE_INTERVAL);
 
-   intervalId.splice(0,intervalId.length)
+   intervalId.length=0;
    intervalId.push(interlId)
 };
 
