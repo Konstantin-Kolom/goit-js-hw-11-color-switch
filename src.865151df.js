@@ -5,4 +5,4 @@ const t=["#FFFFFF","#2196F3","#4CAF50","#FF9800","#009688","#795548"];console.lo
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("../node_modules/normalize.css/normalize.css"),require("./js/them.js");
 },{"../node_modules/normalize.css/normalize.css":"DOAq","./js/them.js":"TcNV"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-11-color-switch/src.ea6a2884.js.map
+//# sourceMappingURL=/goit-js-hw-11-color-switch/src.865151df.js.map
