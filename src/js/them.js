@@ -38,7 +38,7 @@ function startСhangeСolor() {
 
    let interlId = setInterval(() => {
       // const randomColorOld = Math.floor(Math.random() * colors.length);
-      const randomColor = randomIntegerFromInterval(minColor, maxColor)
+      const randomColor = randomIntegerFromInterval(minColor, maxColor) 
       refs.bodyColor.style.background = colors[randomColor];
       console.log(refs.bodyColor.style.background);
    }, CHENGE_INTERVAL);
